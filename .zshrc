@@ -103,3 +103,6 @@ fi
 ####powerline for zsh
 export PATH=$PATH:~/Documents/dotfiles/powerline/scripts
 . ~/Documents/dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
+
+####overide system vim 
+alias mvimv="mvim -v"
