@@ -105,4 +105,7 @@ export PATH=$PATH:~/Documents/dotfiles/powerline/scripts
 . ~/Documents/dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
 
 ####overide system vim 
-alias mvimv="mvim -v"
+alias vim="mvim -v"
+
+#### default editor vim for tmuxinator
+export EDITOR='vim'
