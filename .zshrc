@@ -112,3 +112,6 @@ export EDITOR='vim'
 
 #### for tmuxinator
 source ~/Documents/dotfiles/tmuxinator/completion/tmuxinator.zsh
+
+#### alias mux for tmuxinator
+alias mux='tmuxinator'
