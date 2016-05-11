@@ -109,3 +109,6 @@ alias vim="mvim -v"
 
 #### default editor vim for tmuxinator
 export EDITOR='vim'
+
+#### for tmuxinator
+source ~/Documents/dotfiles/tmuxinator/completion/tmuxinator.zsh
