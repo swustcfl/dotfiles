@@ -49,7 +49,8 @@ This configuration uses the following bindings:
  - `<prefix> p` pastes from the top paste-buffer
  - `<prefix> P` lets you choose the paste-buffer to paste from
  - `C-l` clears both the screen and the history
-
+ - `<prefix> %` 垂直分割窗口
+ - `<prefix> -` `<prefix> "` 水平分割窗口
 Additionaly, `vi-choice`, `vi-edit` and `vi-copy` named tables are adjusted
    to closely match [my own Vim configuration][]
 
