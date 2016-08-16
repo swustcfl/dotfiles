@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/shixiaojing/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -117,3 +117,6 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
+#### juphoon work
+
+source ~/.bash_profile
