@@ -51,6 +51,8 @@ This configuration uses the following bindings:
  - `C-l` clears both the screen and the history
  - `<prefix> %` 垂直分割窗口
  - `<prefix> -` `<prefix> "` 水平分割窗口
+ - `<prefix> t` 显示时间
+
 Additionaly, `vi-choice`, `vi-edit` and `vi-copy` named tables are adjusted
    to closely match [my own Vim configuration][]
 
