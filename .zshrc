@@ -85,8 +85,8 @@ export LC_ALL=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ####powerline for zsh
-export PATH=$PATH:~/Documents/dotfiles/powerline/scripts
-. ~/Documents/dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
+#export PATH=$PATH:~/Documents/dotfiles/powerline/scripts
+#. ~/Documents/dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
 
 ####overide system vim 
 alias vim="mvim -v"
