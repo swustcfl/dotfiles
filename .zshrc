@@ -5,8 +5,12 @@ export ZSH=~/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
-
+# https://github.com/bhilburn/powerlevel9k
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs vi_mode)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history ram load)
+DEFAULT_USER="jasonchen"
+POWERLEVEL9K_MODE='nerdfont-complete'
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -54,7 +58,6 @@ plugins=(git z)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,14 +87,6 @@ export LC_ALL=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-####powerline for zsh
-#export PATH=$PATH:~/Documents/dotfiles/powerline/scripts
-#. ~/Documents/dotfiles/powerline/powerline/bindings/zsh/powerline.zsh
-
-####overide system vim 
-alias vim="mvim -v"
-
-#### default editor vim for tmuxinator
 export EDITOR='vim'
 
 #### for tmuxinator
@@ -117,6 +112,11 @@ if exists percol; then
     bindkey '^R' percol_select_history
 fi
 
-#### juphoon work
+#### go environment
+##GOPATH is in the bash_profile
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
 
 source ~/.bash_profile
+#关于fzf的一些shell命令 比如Ctrl-r search shell history
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
