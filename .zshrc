@@ -120,3 +120,7 @@ export PATH=$PATH:$GOROOT/bin
 source ~/.bash_profile
 #关于fzf的一些shell命令 比如Ctrl-r search shell history
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(starship init zsh)"
+
+# Created by `pipx` on 2024-10-31 08:41:36
+export PATH="$PATH:/Users/jasonchen/.local/bin"
